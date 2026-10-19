@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        .ass {
+          background-image: url('https://tbi.sb-cd.com/t/11774499/1/1/w:1280/t5-enh/thick-ass-huge-tits-fucked-in.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          backdrop-filter: blur(80px);
+        }
+          
+          .jumbotron {
+            background-color: sky blue;
+            padding: 5px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+          }
+          
+          .container {
+            padding: 20px;
+          }
+          
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+          }
+          
+          h3 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            
+          }
+          
+          h4 {
+            font-size: 37px;
+            margin-bottom: 20px;
+          }
+          .description{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-family:courier;
+            text-decoration-line: underline;
+            text-shadow: 0px 0px 10px black;
+          
+          }
+          .tidle{
+            text-shadow: 0px 0px 10px white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family:courier;
+            text-decoration-line: underline;
+
+          }
+          .img_font {
+            backdrop-filter: blur(90px);
+            text-shadow: 0px 0px 10px white;
+            font-family:courier;
+            font-weight: bold;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 300;
+            cursor: pointer;
+            
+          }
+          @keyframes example {
+            0% {background-color: red;  right:200px; top:0px;}
+            25% {background-color: yellow; left:200px; top:0px;}
+        </style>
+</head>
+<body class="ass">
+<div class="jumbotron" style="color:black">
+
+    <h1 class="img_font"; onclick="myFunction()"; style="color:black">
+
+        News Aggrigator
+    </h1>
+
+</div>
+<script>
+  function myFunction() {
+    location.reload();
+  }
+  </script>
+
+<div class="container">
+
+    {% for new, des, i in context %}
+
+    <img src="{{i}}" alt="">
+    <h3>News:  </h3> <p class="tidle">{{new}}</p> 
+    <h4>Description: </h4> <p class="description">{{des}}</p>
+    {% endfor %}
+
+
+</div>
+
+
+</body>
+</html>
