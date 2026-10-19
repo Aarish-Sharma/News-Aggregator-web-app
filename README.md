@@ -63,3 +63,4 @@ news-aggregator-flask/
 └── templates/
     └── index.html
 ```
+<img width="1142" height="858" alt="image" src="https://github.com/user-attachments/assets/a766f804-2781-411e-b5ef-0dc9fa4765d5" />
