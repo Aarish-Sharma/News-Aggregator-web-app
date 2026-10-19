@@ -63,11 +63,3 @@ news-aggregator-flask/
 └── templates/
     └── index.html
 ```
-
-## Security note
-
-Keep API keys out of source code and version control. If an API key was previously committed or shared publicly, revoke or rotate it and use a new key in your local `.env` file.
-
-## Limitations
-
-This is a learning project, not a production deployment. NewsAPI plan limits, source availability, and API errors can affect which headlines are returned.
